@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.logo img {
+    height: 45px;
+}
+
+/* To remove the dot in listing */
+.menu {
+    list-style: none;
+/* To make the list all be in a straight line */
+    display: flex;
+}
+
+.menu li a {
+    height: 40;
+    line-height: 43px;
+/* To put spaces in the list on the straight line */
+    margin: 3px;
+/* To put more spaces in the list on the straight line */
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: grey;
+}
+
+/* To remove the underline in a link */
+a {
+    text-decoration: none;
+}
+
+.hey {
+    color: blue;
+    font-weight: 500;
+    font-size: 0.9em;
+    /* To underline a word */
+    border-bottom: 2px solid blue;
+}
+
+
+
+
+.image {
+    width: 500px;
+    height: 500px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+/* To let the image not be distorted */
+    object-fit: contain;
+}
+
+.content {
+    /* To let it all be in a straight line and not in a listed form */
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.02);
+    /* To put a little bit of 3D */
+    z-index: 1;
+}
+
+.main-text {
+    width: 500px;
+}
+
+.main-text h1 {
+    font-size: 3.5em;
+    /* Navy blue color */
+    color: #1c3548;
+    margin: 0px 0px 10px 0px;
+    line-height: 60px;
+}
+
+.main-text p {
+    color: grey;
+}
+
+.resume-btn {
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    /* To increase the intensity of the shape roundness */
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px rgba(24, 68, 139, 0.21);
+}
+
+/* What to do when you move your mouse on the button */
+.resume-btn:hover {
+    background-color: #3423cd;
+    /* Use all ease if you don't know what to use */
+    transition: all ease 0.2s;
+}
+
+.menu li a:hover {
+    background-color: #3423cd;
+    color: white;
+    box-shadow: 5px 10px 30px rgba(24, 68, 139, 0.21);
+    transition: all ease 0.2s;
+    border-radius: 10px;
+}
